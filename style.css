@@ -2,6 +2,9 @@ html {
     font-size: 14px;
     font-family: "Open Sans";
 }
+* {
+	margin: 0%;
+}
 body {
 	display: flex;
 	flex-direction: column;
@@ -103,11 +106,17 @@ body {
 	right: 24px;
 }
 .last {
-    width: 580px;
-	margin: 0px auto;
-	position: relative;
-	margin-top: 8px;
+    margin-top: 30px;
 	text-align: center;
+	font-size: 14px;
+	color: #111;
+}
+.last a {
+    margin-left: 5px;
+	color: #1a0dab;
+}
+.last a:hover {
+	text-decoration: underline;
 }
 .footer {
     background-color: #f2f2f2;
