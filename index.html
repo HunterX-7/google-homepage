@@ -1,44 +1,56 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Google homepage</title>
+    <link rel="icon"  href="images/favicon.ico">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
 
   </head>
   <body>
     <div class="one">
-        <ul>
+        <ul class="oneone">
             <li>Gmail</li>
             <li>Imágenes</li>
-            <li><img src="Images/apps_black_24dp.svg" alt="appbox" height="24" width="24"></li>
+            <li><img src="Images/apps_black_24dp.svg" alt="appbox"></li>
             <Li><input type="button" class="button" value="Iniciar sesión"></Li>
         </ul>
     </div>
-    <div>  
-    <img src="Images/google_logo.svg" alt="Google logo" height="92" width="272">
-    </div>
-    <div><input class="sf" type="text"></div>
-    <div>
-        <ul>
-            <li><input type="submit" class="input" name="bcg" value="Buscar con Google"></li>
-            <li><input type="submit" class="input" name="mscs" value="Me siento con suerte"></li>
-        </ul>
-    </div>
-    <div>Ofrecido por Google en: <a href="">Español (Latinoamérica)</a> <a href="">English</a></div>
-    <div class="footer">Panamá</div>
-    <div class="footer0">
-        <ul class="footer1">
-            <li>Sobre Google</li>
-            <li>Publicidad</li>
-            <li>Negocios</li>
-            <Li>Cómo funciona la Búsqueda</Li>
-        </ul>
-        <ul class="footer2">
-            <li>Privacidad</li>
-            <li>Condiciones</li>
-            <li>Preferencias</li>
-        </ul>
-    </div>
+    <section class="section-1">
+        <div>  
+            <img src="Images/google_logo.svg" alt="Google logo" class="logo">
+            </div>
+            <section class="section-two">
+                <div class="two">
+                    <img src="images/search.svg" class="search-icon">
+                    <input class="sf" type="text">
+                    <img src="images/googlemic_clr_24px.svg" class="vs-icon">
+                    <input type="submit" class="input" value="Buscar con Google">
+                    <input type="submit" class="input" value="Me siento con suerte">
+                </div>
+                <div class="last">
+                    Ofrecido por Google en: 
+                    <a href="#">Español (Latinoamérica)</a> 
+                    <a href="#">English</a>
+                </div>
+            </section>
+    </section>
+    <footer>
+        <div class="footer">Panamá</div>
+        <div class="footer0">
+            <ul class="footer1">
+                <li>Sobre Google</li>
+                <li>Publicidad</li>
+                <li>Negocios</li>
+                <Li>Cómo funciona la Búsqueda</Li>
+            </ul>
+            <ul class="footer2">
+                <li>Privacidad</li>
+                <li>Condiciones</li>
+                <li>Preferencias</li>
+            </ul>
+        </div>
+    </footer>
   </body>
 </html>

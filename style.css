@@ -2,8 +2,29 @@ html {
     font-size: 14px;
     font-family: "Open Sans";
 }
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
 .one {
-    float: right;
+    display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 30px;
+	margin-top: 14px;
+}
+.oneone {
+    font-size: 13px;
+	display: inline-block;
+	line-height: 24px;
+	font-weight: 400;
+	color: rgb(0,0,0, 0.87);
+	cursor: pointer;
+	padding: 5px 6.7px
+}
+.oneone:hover{
+    opacity: 0.85;
 }
 .button {
     background-color: #1a73e8;
@@ -16,27 +37,77 @@ html {
     display: inline-block;
     font-size: 14px;
     border-radius: 4px;
+    cursor: pointer;
 }
     .button:hover {
     box-shadow: 0 1px 2px 0 #1a73e8, 0 1px 4px 0 #1a73e8;
 }
 .input {
-    background-color: #f8f9fa;
-    border: none;
-    color: #70757a;
-    margin: 0px 8px;
-    padding: 9px 23px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
-    border-radius: 4px;
+    border: 1px solid transparent;
+	padding: 9px 15px;
+	color: #666;
+	font-size: 14px;
+	border-radius: 4px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-top: 28px;
+	outline: none;
+	cursor: pointer;
+	transition: border-color 100ms;
 }
     .input:hover {
-    box-shadow: 0 1px 2px 0 #70757a, 0 1px 4px 0 #70757a;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #f8f9fa;
+        border: 1px solid #aaa;
+}
+.section-1 {
+	flex: 1;
+}
+.section-1 .logo {
+    display: block;
+	margin: 0px auto;
+	margin-top: 107px;
+}
+.two {
+    width: 580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: 8px;
+	text-align: center;
+}
+.two .sf {
+    display: block;
+	border: 1px solid #ddd;
+	color: rgba(0,0,0, 0.87);
+	font-size: 16px;
+	padding: 13px;
+	padding-left: 45px;
+	border-radius: 25px;
+	width: 100%;
+	transition: box-shadow 100ms;
+	outline: none;
+}
+.two .sf:hover {
+    border: 1px solid #ddd;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);			
+}
+.two .search-icon {
+    width: 20px;
+	opacity: .4;
+	position: absolute;
+	top: 13px;
+	left: 14px;
+}
+.two .vs-icon {
+	width: 20px;
+	position: absolute;
+	top: 13px;
+	right: 24px;
+}
+.last {
+    width: 580px;
+	margin: 0px auto;
+	position: relative;
+	margin-top: 8px;
+	text-align: center;
 }
 .footer {
     background-color: #f2f2f2;
